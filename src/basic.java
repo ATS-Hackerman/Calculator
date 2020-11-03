@@ -22,4 +22,13 @@ public class Basic {
         result = a / b;
         return result;
     }
+    
+    public static int Factorial(int a){
+        int result = 0;
+        for(int i = a; i > 0; i--){
+            a = (a - 1);
+            result = a;
+        }
+        return result;
+    }
 }
