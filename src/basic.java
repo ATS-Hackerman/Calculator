@@ -24,9 +24,9 @@ public class Basic {
     }
     
     public static int Factorial(int a){
-        int result = 0;
-        for(int i = a; i > 1; i--){
-            result = a * (a - 1);
+        int result = 1;
+        for(int i = 1; i <= a; i++){
+            result = result * i;
         }
         return result;
     }
