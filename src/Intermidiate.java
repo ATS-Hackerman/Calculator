@@ -12,6 +12,20 @@ public class Intermidiate {
 
     public static double Pythagorian(int legA, int legB, int hypotenuse){
         double result = 0.0;
+
+        if(legA == 0 && legB == 0){
+            throw new IllegalArgumentException("You can't calculate two unknown legs with only one known hypotenuse!");
+        }
+        else if(legA == 0 && hypotenuse == 0){
+            throw new IllegalArgumentException("You can't calculate an unknown leg and hypotenuse with only one known leg");
+        }
+        else if(legB == 0 && hypotenuse == 0){
+            throw new IllegalArgumentException("You can't calculate an unknown leg and hypotenuse with only one known leg");
+        }
+        else if(legA == 0 && legB == 0 && hypotenuse == 0){ //"Condition always false" - Contradicts earlier statements?
+            throw new IllegalArgumentException("You can't calculate anything if you have no known variables");
+        }
+
         if(legA == 0){
             result = sqrt((hypotenuse * hypotenuse) - (legB * legB));
         }
