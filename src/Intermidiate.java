@@ -10,9 +10,17 @@ public class Intermidiate {
         return result;
     }
 
-    public static double Pythagorian(int legA, int legB){
-        double hypotenuse;
-        hypotenuse = sqrt((legA * legA) + (legB * legB));
-        return hypotenuse;
+    public static double Pythagorian(int legA, int legB, int hypotenuse){
+        double result = 0.0;
+        if(legA == 0){
+            result = sqrt((hypotenuse * hypotenuse) - (legB * legB));
+        }
+        if(legB == 0){
+            result = sqrt((hypotenuse * hypotenuse) - (legA * legA));
+        }
+        if(hypotenuse == 0){
+            result = sqrt((legA * legA) + (legB * legB));
+        }
+        return result;
     }
 }
