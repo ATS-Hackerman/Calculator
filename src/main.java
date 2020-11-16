@@ -6,6 +6,6 @@ public class Main {
         System.out.println("20 / 30 = " + Basic.Divition(30,3));
 
         System.out.println("4 factorial = " + Intermidiate.Factorial(4));
-        System.out.println("4 factorial = " + Intermidiate.Pythagorian(3, 4, 0));
+        System.out.println("The unknown side of the triangle equals: " + Intermidiate.Pythagorian(3, 4, 0));
     }
 }
