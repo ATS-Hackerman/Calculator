@@ -1,26 +1,18 @@
 public class Geometry {
 
-    public static double AreaTriangle(int length, int width){
-        double area = 0.0;
-
-        return area;
+    public static double AreaTriangle(int length, int height){
+        return ((length * height) / 2);
     }
 
-    public static double AreaSquare(int length, int width){
-        double area = 0.0;
-
-        return area;
+    public static double AreaSquare(int side){
+        return (side * side);
     }
 
     public static double AreaRectangle(int length, int width){
-        double area = 0.0;
-
-        return area;
+        return (length * width);
     }
 
-    public static double AreaCircle(int length, int width){
-        double area = 0.0;
-
-        return area;
+    public static double AreaCircle(int radius){
+        return (Math.PI * radius * radius);
     }
 }
