@@ -15,5 +15,8 @@ public class Main {
         System.out.println("Area of the square: " + Geometry.AreaSquare(4));
         System.out.println("Area of the rectangle: " + Geometry.AreaRectangle(4, 5));
         System.out.println("Area of the circle: " + Geometry.AreaCircle(3));
+        System.out.println("Volume of the tetrahedron is: " + Geometry.VolumeTetrahedron(4));
+        System.out.println("Volume of the cube is: " + Geometry.VolumeCube(4));
+        System.out.println("Volume of the sphere is: " + Geometry.VolumeSphere(3));
     }
 }

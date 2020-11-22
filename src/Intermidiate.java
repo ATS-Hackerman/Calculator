@@ -38,4 +38,7 @@ public class Intermidiate {
         }
         return result;
     }
+    public static double Quadratic(int a, int b, int c){
+
+    }
 }
