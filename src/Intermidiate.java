@@ -38,7 +38,11 @@ public class Intermidiate {
         }
         return result;
     }
-    public static double Quadratic(int a, int b, int c){
+    public static String Quadratic(int a, int b, int c){
+        double x1 = 0.0;
+        double x2 = 0.0;
 
+
+        return (x1 + " and " + x2);
     }
 }
