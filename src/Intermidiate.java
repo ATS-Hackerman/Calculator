@@ -38,4 +38,7 @@ public class Intermidiate {
         }
         return result;
     }
+    public static double Power(double a, double b){
+        return (Math.pow(a, b));
+    }
 }
