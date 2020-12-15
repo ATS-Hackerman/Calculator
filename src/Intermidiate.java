@@ -41,4 +41,9 @@ public class Intermidiate {
     public static double Power(double a, double b){
         return (Math.pow(a, b));
     }
+
+    public static String Derivative(int a, int power){
+
+        return "";
+    }
 }
