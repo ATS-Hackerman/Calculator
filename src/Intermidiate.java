@@ -43,7 +43,8 @@ public class Intermidiate {
     }
 
     public static String Derivative(int a, int power){
-
-        return "";
+        int numberMult = a * power;
+        int numberPow = power - 1;
+        return numberMult + "x to the power of " + numberPow;
     }
 }
