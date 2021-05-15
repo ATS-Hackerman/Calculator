@@ -1,10 +1,10 @@
-public class Main {
+public class main {
     public static void main(String[] args){
         System.out.println("Basic Examples");
-        System.out.println("20 + 30 = " + Basic.Addition(20,30));
-        System.out.println("20 - 30 = " + Basic.Subtraction(20,30));
-        System.out.println("20 * 30 = " + Basic.Multiplication(20,30));
-        System.out.println("20 / 30 = " + Basic.Divition(30,3));
+        System.out.println("20 + 30 = " + basic.Addition(20,30));
+        System.out.println("20 - 30 = " + basic.Subtraction(20,30));
+        System.out.println("20 * 30 = " + basic.Multiplication(20,30));
+        System.out.println("20 / 30 = " + basic.Divition(30,3));
 
         System.out.println("\n" + "Intermidiate examples");
         System.out.println("4 factorial = " + Intermidiate.Factorial(4));

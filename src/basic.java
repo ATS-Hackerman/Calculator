@@ -1,4 +1,4 @@
-public class Basic {
+public class basic {
 
     public static double Addition(double a, double b){
         double sum;
