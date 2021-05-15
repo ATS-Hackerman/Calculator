@@ -1,3 +1,4 @@
+/*
 import static java.lang.Math.sqrt;
 
 public class Intermidiate {
@@ -48,3 +49,4 @@ public class Intermidiate {
         return numberMult + "x to the power of " + numberPow;
     }
 }
+*/
