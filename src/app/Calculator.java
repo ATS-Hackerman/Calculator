@@ -5,7 +5,7 @@ import java.awt.event.*;
 public class Calculator implements ActionListener {
     
     JFrame frame;
-    JTextField tectfield;
+    JTextField textfield;
     JButton[] numberButtons = new JButton[10];
     JButton[] functionButtons = new JButton[8];
     JButton addButton, subtractButton, multiplyButton, divideButton;
@@ -23,7 +23,8 @@ public class Calculator implements ActionListener {
         frame.setSize(400, 500);
         frame.setLayout(null);
         
-        
+        textfield = new JTextField();
+
         
         frame.setVisible(true);
     }
