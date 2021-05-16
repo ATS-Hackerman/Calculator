@@ -1,5 +1,3 @@
-package app;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -15,9 +13,19 @@ public class Calculator implements ActionListener {
     JPanel panel;
 
     Font calcFont = new Font("Courier New", Font.BOLD, 30);
+
+    double num1 = 0, num2 = 0, result = 0;
+    double operator;
     
     Calculator() {
+        frame = new JFrame("Calculator");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 500);
+        frame.setLayout(null);
         
+        
+        
+        frame.setVisible(true);
     }
 
     public static void main(String[] args) {
