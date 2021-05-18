@@ -29,7 +29,7 @@ public class Calculator implements ActionListener {
         textfield.setBounds(50, 25, 300, 50);
         textfield.setFont(calcFont);
         textfield.setEditable(false);
-        
+
         addButton = new JButton("+");
         subtractButton = new JButton("-");
         multiplyButton = new JButton("x");
@@ -47,6 +47,19 @@ public class Calculator implements ActionListener {
         functionButtons[5] = addButton;
         functionButtons[6] = addButton;
         functionButtons[7] = addButton;
+
+        for(int i = 0; i < 8; i++) {
+            functionButtons[i].addActionListener(this);
+            functionButtons[i].setFont(calcFont);
+            functionButtons[i].setFocusable(false);
+        }
+        for(int i = 0; i < 10; i++) {
+            numberButtons[i] = new JButton(String.valueOf(i));
+            numberButtons[i].addActionListener(this);
+            numberButtons[i].setFont(calcFont);
+            numberButtons[i].setFocusable(false);
+        }
+
 
         frame.add(textfield);
         frame.setVisible(true);
