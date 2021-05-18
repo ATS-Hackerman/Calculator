@@ -1,3 +1,4 @@
+/*
 public class Geometry {
 
     public static double AreaTriangle(int length, int height){
@@ -28,3 +29,4 @@ public class Geometry {
         return ((4 * Math.PI * Math.pow(radius, 3)) / 3);
     }
 }
+*/

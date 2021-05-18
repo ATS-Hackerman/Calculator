@@ -1,3 +1,4 @@
+/*
 public class main {
     public static void main(String[] args){
         System.out.println("Basic Examples");
@@ -22,3 +23,4 @@ public class main {
         System.out.println("The derivative is: " + Intermidiate.Derivative(2, 3));
     }
 }
+*/

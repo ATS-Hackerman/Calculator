@@ -1,3 +1,4 @@
+/*
 public class basic {
 
     public static double Addition(double a, double b){
@@ -24,3 +25,4 @@ public class basic {
         return result;
     }
 }
+*/
