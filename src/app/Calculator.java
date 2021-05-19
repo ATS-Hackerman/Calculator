@@ -70,6 +70,16 @@ public class Calculator implements ActionListener {
         panel.setLayout(new GridLayout(4, 4, 10, 10));
         panel.setBackground(Color.LIGHT_GRAY);
 
+        panel.add(numberButtons[1]);
+        panel.add(numberButtons[2]);
+        panel.add(numberButtons[3]);
+        panel.add(numberButtons[4]);
+        panel.add(numberButtons[5]);
+        panel.add(numberButtons[6]);
+        panel.add(numberButtons[7]);
+        panel.add(numberButtons[8]);
+        panel.add(numberButtons[9]);
+
         frame.add(panel);
         frame.add(deleteButton);
         frame.add(clearButton);
