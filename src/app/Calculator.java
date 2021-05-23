@@ -109,6 +109,10 @@ public class Calculator implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+        for(int i = 0; i < 10; i++) {
+            if(e.getSource() == numberButtons[i]) {
+                textfield.setText(textfield.getText().concat(String.valueOf(i)));
+            }
+        }
     }
 }
