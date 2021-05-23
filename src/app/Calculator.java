@@ -11,6 +11,7 @@ public class Calculator implements ActionListener {
     JButton addButton, subtractButton, multiplyButton, divideButton;
     JButton decimalButton, equalsButton, deleteButton, clearButton;
     JPanel panel;
+    
     //Font Custimisation
     Font calcFont = new Font("Courier New", Font.BOLD, 30);
 
@@ -24,11 +25,13 @@ public class Calculator implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
         frame.setLayout(null);
+
         //Screen for calculator output
         textfield = new JTextField();
         textfield.setBounds(50, 25, 300, 50);
         textfield.setFont(calcFont);
         textfield.setEditable(false);
+        
         //Action buttons
         addButton = new JButton("+");
         subtractButton = new JButton("-");
@@ -47,6 +50,7 @@ public class Calculator implements ActionListener {
         functionButtons[5] = addButton;
         functionButtons[6] = addButton;
         functionButtons[7] = addButton;
+        
         //Button creatioon loops
         //Action
         for(int i = 0; i < 8; i++) {
@@ -62,24 +66,35 @@ public class Calculator implements ActionListener {
             numberButtons[i].setFocusable(false);
         }
 
+        //Draws delete and clear buttons
         deleteButton.setBounds(50, 430, 145, 50);
         clearButton.setBounds(205, 430, 145, 50);
+        
         //Makes panel
         panel = new JPanel();
         panel.setBounds(50, 100, 300, 300);
         panel.setLayout(new GridLayout(4, 4, 10, 10));
         panel.setBackground(Color.LIGHT_GRAY);
+        
         //Fills panel
         panel.add(numberButtons[1]);
         panel.add(numberButtons[2]);
         panel.add(numberButtons[3]);
+        panel.add(addButton);
         panel.add(numberButtons[4]);
         panel.add(numberButtons[5]);
         panel.add(numberButtons[6]);
+        panel.add(subtractButton);
         panel.add(numberButtons[7]);
         panel.add(numberButtons[8]);
         panel.add(numberButtons[9]);
+        panel.add(multiplyButton);
+        panel.add(decimalButton);
+        panel.add(numberButtons[0]);
+        panel.add(equalsButton);
+        panel.add(divideButton);
 
+        //Adding to- and showing frame
         frame.add(panel);
         frame.add(deleteButton);
         frame.add(clearButton);
@@ -94,6 +109,10 @@ public class Calculator implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+        for(int i = 0; i < 10; i++) {
+            if(e.getSource() == numberButtons[i]) {
+                textfield.setText(textfield.getText().concat(String.valueOf(i)));
+            }
+        }
     }
 }
