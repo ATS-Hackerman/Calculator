@@ -114,5 +114,28 @@ public class Calculator implements ActionListener {
                 textfield.setText(textfield.getText().concat(String.valueOf(i)));
             }
         }
+        if(e.getSource() == decimalButton){
+            textfield.setText(textfield.getText().concat("."));
+        }
+        if(e.getSource() == addButton){
+            num1 = Double.parseDouble(textfield.getText());
+            operator = '+';
+            textfield.setText("");
+        }
+        if(e.getSource() == subtractButton){
+            num1 = Double.parseDouble(textfield.getText());
+            operator = '-';
+            textfield.setText("");
+        }
+        if(e.getSource() == multiplyButton){
+            num1 = Double.parseDouble(textfield.getText());
+            operator = 'x';
+            textfield.setText("");
+        }
+        if(e.getSource() == divideButton){
+            num1 = Double.parseDouble(textfield.getText());
+            operator = '÷';
+            textfield.setText("");
+        }
     }
 }
