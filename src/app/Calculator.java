@@ -109,29 +109,35 @@ public class Calculator implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
+        //Types numbers to textfield
         for(int i = 0; i < 10; i++) {
             if(e.getSource() == numberButtons[i]) {
                 textfield.setText(textfield.getText().concat(String.valueOf(i)));
             }
         }
+        //Types decimalpoint
         if(e.getSource() == decimalButton){
             textfield.setText(textfield.getText().concat("."));
         }
+        //Resets textfield and readies for addition
         if(e.getSource() == addButton){
             num1 = Double.parseDouble(textfield.getText());
             operator = '+';
             textfield.setText("");
         }
+        //Resets textfield and readies for subtraction
         if(e.getSource() == subtractButton){
             num1 = Double.parseDouble(textfield.getText());
             operator = '-';
             textfield.setText("");
         }
+        //Resets textfield and readies for multiplication
         if(e.getSource() == multiplyButton){
             num1 = Double.parseDouble(textfield.getText());
             operator = 'x';
             textfield.setText("");
         }
+        //Resets textfield and readies for divition
         if(e.getSource() == divideButton){
             num1 = Double.parseDouble(textfield.getText());
             operator = '÷';
