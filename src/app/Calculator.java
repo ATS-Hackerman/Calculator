@@ -143,5 +143,9 @@ public class Calculator implements ActionListener {
             operator = '÷';
             textfield.setText("");
         }
+        if(e.getSource() == equalsButton){
+            num2 = Double.parseDouble(textfield.getText());
+            
+        }
     }
 }
