@@ -116,36 +116,36 @@ public class Calculator implements ActionListener {
             }
         }
         //Types decimalpoint
-        if(e.getSource() == decimalButton){
+        if(e.getSource() == decimalButton) {
             textfield.setText(textfield.getText().concat("."));
         }
         //Resets textfield and readies for addition
-        if(e.getSource() == addButton){
+        if(e.getSource() == addButton) {
             num1 = Double.parseDouble(textfield.getText());
             operator = '+';
             textfield.setText("");
         }
         //Resets textfield and readies for subtraction
-        if(e.getSource() == subtractButton){
+        if(e.getSource() == subtractButton) {
             num1 = Double.parseDouble(textfield.getText());
             operator = '-';
             textfield.setText("");
         }
         //Resets textfield and readies for multiplication
-        if(e.getSource() == multiplyButton){
+        if(e.getSource() == multiplyButton) {
             num1 = Double.parseDouble(textfield.getText());
             operator = 'x';
             textfield.setText("");
         }
         //Resets textfield and readies for divition
-        if(e.getSource() == divideButton){
+        if(e.getSource() == divideButton) {
             num1 = Double.parseDouble(textfield.getText());
             operator = '÷';
             textfield.setText("");
         }
-        if(e.getSource() == equalsButton){
+        if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
-            
+
         }
     }
 }
