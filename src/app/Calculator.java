@@ -146,6 +146,22 @@ public class Calculator implements ActionListener {
         if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
             
+            switch(operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':                    
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+                }
+                textfield.setText(String.valueOf(result));
+                num1 = result;
         }
     }
 }
