@@ -35,8 +35,8 @@ public class Calculator implements ActionListener {
         //Action buttons
         addButton = new JButton("+");
         subtractButton = new JButton("-");
-        multiplyButton = new JButton("x");
-        divideButton = new JButton("÷");
+        multiplyButton = new JButton("*");
+        divideButton = new JButton("/");
         decimalButton = new JButton(".");
         equalsButton = new JButton("=");
         deleteButton = new JButton("CE");
@@ -134,18 +134,18 @@ public class Calculator implements ActionListener {
         //Resets textfield and readies for multiplication
         if(e.getSource() == multiplyButton) {
             num1 = Double.parseDouble(textfield.getText());
-            operator = 'x';
+            operator = '*';
             textfield.setText("");
         }
         //Resets textfield and readies for divition
         if(e.getSource() == divideButton) {
             num1 = Double.parseDouble(textfield.getText());
-            operator = '÷';
+            operator = '/';
             textfield.setText("");
         }
         if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
-
+            
         }
     }
 }
