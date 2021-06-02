@@ -115,7 +115,7 @@ public class Calculator implements ActionListener {
                 textfield.setText(textfield.getText().concat(String.valueOf(i)));
             }
         }
-        //Types decimalpoint --BUG--
+        //Types decimalpoint
         if(e.getSource() == decimalButton) {
             textfield.setText(textfield.getText().concat("."));
         }
@@ -131,13 +131,13 @@ public class Calculator implements ActionListener {
             operator = '-';
             textfield.setText("");
         }
-        //Resets textfield and readies for multiplication --BUG--
+        //Resets textfield and readies for multiplication
         if(e.getSource() == multiplyButton) {
             num1 = Double.parseDouble(textfield.getText());
             operator = '*';
             textfield.setText("");
         }
-        //Resets textfield and readies for divition --BUG--
+        //Resets textfield and readies for divition
         if(e.getSource() == divideButton) {
             num1 = Double.parseDouble(textfield.getText());
             operator = '/';
