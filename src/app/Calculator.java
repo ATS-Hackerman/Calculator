@@ -142,6 +142,7 @@ public class Calculator implements ActionListener {
             operator = '/';
             textfield.setText("");
         }
+        
         if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
             
@@ -161,6 +162,10 @@ public class Calculator implements ActionListener {
                 }
                 textfield.setText(String.valueOf(result));
                 num1 = result;
+        }
+
+        if(e.getSource() == clearButton) {
+            textfield.setText("");
         }
     }
 }
