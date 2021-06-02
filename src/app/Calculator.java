@@ -74,7 +74,6 @@ public class Calculator implements ActionListener {
         panel = new JPanel();
         panel.setBounds(50, 100, 300, 300);
         panel.setLayout(new GridLayout(4, 4, 10, 10));
-        panel.setBackground(Color.LIGHT_GRAY);
         
         //Fills panel
         panel.add(numberButtons[1]);
@@ -143,7 +142,7 @@ public class Calculator implements ActionListener {
             operator = '/';
             textfield.setText("");
         }
-        /*if(e.getSource() == equalsButton) {
+        if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
             
             switch(operator) {
@@ -162,6 +161,6 @@ public class Calculator implements ActionListener {
                 }
                 textfield.setText(String.valueOf(result));
                 num1 = result;
-        }*/
+        }
     }
 }
