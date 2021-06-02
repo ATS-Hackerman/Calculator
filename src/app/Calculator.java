@@ -39,7 +39,7 @@ public class Calculator implements ActionListener {
         divideButton = new JButton("/");
         decimalButton = new JButton(".");
         equalsButton = new JButton("=");
-        deleteButton = new JButton("CE");
+        deleteButton = new JButton("DEL");
         clearButton = new JButton("AC");
 
         functionButtons[0] = addButton;
