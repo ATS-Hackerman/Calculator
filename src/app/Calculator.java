@@ -43,13 +43,13 @@ public class Calculator implements ActionListener {
         clearButton = new JButton("AC");
 
         functionButtons[0] = addButton;
-        functionButtons[1] = addButton;
-        functionButtons[2] = addButton;
-        functionButtons[3] = addButton;
-        functionButtons[4] = addButton;
-        functionButtons[5] = addButton;
-        functionButtons[6] = addButton;
-        functionButtons[7] = addButton;
+        functionButtons[1] = subtractButton;
+        functionButtons[2] = multiplyButton;
+        functionButtons[3] = divideButton;
+        functionButtons[4] = decimalButton;
+        functionButtons[5] = equalsButton;
+        functionButtons[6] = deleteButton;
+        functionButtons[7] = clearButton;
         
         //Button creatioon loops
         //Action
@@ -143,7 +143,7 @@ public class Calculator implements ActionListener {
             operator = '/';
             textfield.setText("");
         }
-        if(e.getSource() == equalsButton) {
+        /*if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
             
             switch(operator) {
@@ -162,6 +162,6 @@ public class Calculator implements ActionListener {
                 }
                 textfield.setText(String.valueOf(result));
                 num1 = result;
-        }
+        }*/
     }
 }
