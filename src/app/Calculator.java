@@ -16,7 +16,7 @@ public class Calculator implements ActionListener {
     Font calcFont = new Font("Courier New", Font.BOLD, 30);
 
     double num1 = 0, num2 = 0, result = 0;
-    double operator;
+    int operator;
     
     //Constructor
     Calculator() {
