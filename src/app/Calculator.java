@@ -142,7 +142,7 @@ public class Calculator implements ActionListener {
             operator = '/';
             textfield.setText("");
         }
-        
+        //Shows result/product of equation typed in textfield
         if(e.getSource() == equalsButton) {
             num2 = Double.parseDouble(textfield.getText());
             
@@ -163,11 +163,11 @@ public class Calculator implements ActionListener {
                 textfield.setText(String.valueOf(result));
                 num1 = result;
         }
-
+        //Clears textfield
         if(e.getSource() == clearButton) {
             textfield.setText("");
         }
-
+        //Deletes the last typed number/symbol from textfield
         if(e.getSource() == deleteButton) {
             String string = textfield.getText();
             textfield.setText("");
