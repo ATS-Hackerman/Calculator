@@ -69,6 +69,7 @@ public class Calculator implements ActionListener {
         }
 
         //Draws delete and clear buttons
+        negateButton.setBounds(50, 50, 50, 50);
         deleteButton.setBounds(50, 430, 145, 50);
         clearButton.setBounds(205, 430, 145, 50);
         
