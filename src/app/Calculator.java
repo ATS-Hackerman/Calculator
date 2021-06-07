@@ -9,7 +9,7 @@ public class Calculator implements ActionListener {
     JButton[] numberButtons = new JButton[10];
     JButton[] functionButtons = new JButton[8];
     JButton addButton, subtractButton, multiplyButton, divideButton;
-    JButton decimalButton, equalsButton, deleteButton, clearButton, negateButton;
+    JButton decimalButton, equalsButton, deleteButton, clearButton;
     JPanel panel;
     
     //Font Custimisation
@@ -41,7 +41,6 @@ public class Calculator implements ActionListener {
         equalsButton = new JButton("=");
         deleteButton = new JButton("DEL");
         clearButton = new JButton("AC");
-        negateButton = new JButton("(-)");
 
         functionButtons[0] = addButton;
         functionButtons[1] = subtractButton;
@@ -51,7 +50,6 @@ public class Calculator implements ActionListener {
         functionButtons[5] = equalsButton;
         functionButtons[6] = deleteButton;
         functionButtons[7] = clearButton;
-        functionButtons[8] = negateButton;
         
         //Button creatioon loops
         //Action
@@ -69,7 +67,6 @@ public class Calculator implements ActionListener {
         }
 
         //Draws delete and clear buttons
-        negateButton.setBounds(50, 50, 50, 50);
         deleteButton.setBounds(50, 430, 145, 50);
         clearButton.setBounds(205, 430, 145, 50);
         
