@@ -7,9 +7,9 @@ public class Calculator implements ActionListener {
     JFrame frame;
     JTextField textfield;
     JButton[] numberButtons = new JButton[10];
-    JButton[] functionButtons = new JButton[8];
+    JButton[] functionButtons = new JButton[9];
     JButton addButton, subtractButton, multiplyButton, divideButton;
-    JButton decimalButton, equalsButton, deleteButton, clearButton;
+    JButton decimalButton, equalsButton, deleteButton, clearButton, negativeButton;
     JPanel panel;
     
     //Font Custimisation
@@ -50,10 +50,11 @@ public class Calculator implements ActionListener {
         functionButtons[5] = equalsButton;
         functionButtons[6] = deleteButton;
         functionButtons[7] = clearButton;
+        functionButtons[8] = negativeButton;
         
         //Button creatioon loops
         //Action
-        for(int i = 0; i < 9; i++) {
+        for(int i = 0; i < 8; i++) {
             functionButtons[i].addActionListener(this);
             functionButtons[i].setFont(calcFont);
             functionButtons[i].setFocusable(false);
