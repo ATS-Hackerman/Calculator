@@ -179,5 +179,10 @@ public class Calculator implements ActionListener {
                 textfield.setText(textfield.getText() + string.charAt(i));
             }
         }
+        if(e.getSource() == negativeButton) {
+            double current = Double.parseDouble(textfield.getText());
+            current *= -1;
+            textfield.setText(String.valueOf(current));
+        }
     }
 }
