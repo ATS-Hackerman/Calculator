@@ -17,6 +17,7 @@ public class Calculator implements ActionListener {
 
     double num1 = 0, num2 = 0, result = 0;
     int operator;
+    private static Calculator client;
     
     //Constructor
     Calculator() {
@@ -107,7 +108,7 @@ public class Calculator implements ActionListener {
 
     //Running method
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
+        Calculator client = new Calculator();
     }
     
     @Override
