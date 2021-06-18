@@ -1,4 +1,4 @@
 # Calculator
 
-**Making a calculator for fun** 📱
-I'll probably keep improving this until it works like a pocket calculator.
+**Making a calculator with java swing** 📱
+I'll probably keep improving this pocket calculator.
